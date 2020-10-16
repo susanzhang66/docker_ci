@@ -1,5 +1,6 @@
 version: '3.1'
 services:
+  # 在 .backend里面的docker服务
   app-pm2:
       container_name: app-pm2
       #构建容器
