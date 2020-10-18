@@ -14,6 +14,7 @@ function run_cmd(cmd, args, callback) {
 // debug用
 // run_cmd('sh', ['./deploy-dev.sh'], function(text){ console.log(text) });
 
+// 接收程序。
 http.createServer(function (req, res) {
 
     handler(req, res, function (err) {

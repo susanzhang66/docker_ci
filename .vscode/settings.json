@@ -15,12 +15,12 @@
         }],
         "targets": [{
             "type": "sftp",
-            "name": "AliyunServer",
-            "dir": "/root/source/docker_ci",
-            "host": "47.98.252.43",
+            "name": "rainbow",
+            "dir": "/root/source/docker_ci",  
+            "host": "47.96.73.170",
             "port": 22,
             "user": "root",
-            "privateKey": "/Users/xia/.ssh/id_rsa"
-        }],
-    },
+            "privateKey": "/Users/rainbow/.ssh/id_rsa"
+        }]
+    }
 }
