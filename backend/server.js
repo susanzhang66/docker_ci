@@ -10,11 +10,9 @@ app.get('/', (req, res) => res.send('Hello World!'))
 
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
-try{
-  const course = JSON.parse(fs.readFileSync(path.resolve(__dirname, './models/goods.json')).toString())
-}catch( e ){
-  console.log( e )
-}
+// 挖坑啊， 这里用了 try- catch居然就报了很多的错误。。果然还是需要一个健全的 代码报错日志。
+const course = JSON.parse(fs.readFileSync(path.resolve(__dirname, './models/goods.json')).toString())
+
 
 const allData = []
 course.tags.forEach(key => {
